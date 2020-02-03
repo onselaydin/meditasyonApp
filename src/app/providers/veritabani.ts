@@ -12,7 +12,8 @@ export class VeritabaniProvider {
     constructor(
         private storage: Storage,
         private platform: Platform,
-        private sqlite: SQLite ){
+        private sqlite: SQLite 
+        ){
 
     }
 
