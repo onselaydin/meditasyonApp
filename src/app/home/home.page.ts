@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HTTP } from '@ionic-native/http/ngx';
-import { Meditasyon } from 'src/entities/meditasyon';
+import { Meditasyon } from '../../entities/meditasyon';
 import { Observable } from 'rxjs';
 import { from } from 'rxjs';
 import 'rxjs/add/operator/map';
