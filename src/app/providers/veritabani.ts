@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {SQLite,SQLiteObject} from "@ionic-native/sqlite";
+import {SQLiteObject} from "@ionic-native/sqlite";
 import {Platform} from "ionic-angular";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import {Meditasyon} from "../../entities/meditasyon";
@@ -12,7 +12,7 @@ export class VeritabaniProvider {
     constructor(
         private storage: Storage,
         private platform: Platform,
-        private sqlite: SQLite 
+        //private sqlite: SQLite 
         ){
 
     }
