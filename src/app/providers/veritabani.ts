@@ -8,7 +8,7 @@ import {Meditasyon} from "../../entities/Meditasyon";
 export class VeritabaniProvider {
     private veritabani: SQLiteObject;
     private veritabaniHazir: BehaviorSubject<boolean>;
-    ms: Meditasyon[]:
+    //ms: Meditasyon[]:
     constructor(
         private storage: Storage,
         private platform: Platform,

@@ -1,0 +1,62 @@
+önce nodejs kurulmalı.
+www.ionicframework.com
+>npm install -g ionic
+proje açmak
+>ionic start meditasyonApp sidemenu
+>cd meditasyonApp
+>ionic serve --lab
+src proje klasörüdür. index.html başlangıç sayfasıdır. title tagını değiştir.
+pages -> Sayfalarımız burada olacak.
+theme -> css dosyalarımız burada
+assets -> resimleriz burada olacak.
+app -> en önemli klasörümüz
+app.component.ts -> uygulamamız açılırken ilk çalışan dosyadır
+app.html -> ilk açılan sayfa
+app.scss -> genel css dosyasıdır.
+
+-- http get için --
+https://ionicframework.com/docs/native/http
+npm install @ionic-native/http
+import { HTTP } from '@ionic-native/http/ngx';
+constructor(private http: HTTP) {}
+
+-- Bir fonksyiona abone olmak --
+p ile ana fonksiyonun göndürdüğü veriyi alıyoruz.
+
+anafonksiyon() {
+    return "bla bla";
+}
+cagiranfonksiyon(){
+    this.anafonksiyon().subscribe(p=> {
+
+    })
+}
+
+--Page eventları--
+https://ionicframework.com/docs/angular/lifecycle
+ionViewWillEnter
+ionViewDidEnter
+ionViewWillLeave
+ionViewDidLeave
+ ionViewDidEnter() {
+    console.log("sayfa açılınca çalışıyor");
+  }
+
+  -- cordova kurulumu --
+  npm i -g cordova
+
+
+  
+https://ionicframework.com/docs/native/ocr
+
+-- sayfa,servis,component vs eklemek --
+https://ionicframework.com/docs/cli/commands/generate
+
+# ionic generate page favorits
+
+--ikonlar--
+https://ionicons.com/
+
+-- sqlite --
+https://ionicframework.com/docs/native/sqlite
+
