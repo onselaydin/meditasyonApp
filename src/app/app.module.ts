@@ -8,7 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HTTP } from '@ionic-native/http/ngx';
+//import { HTTP } from '@ionic-native/http/ngx';
+import { HttpClientModule,HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
 @NgModule({
@@ -17,13 +18,15 @@ import 'rxjs/add/operator/map';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    //HttpClient,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    HTTP
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    //HTTP
   ],
   bootstrap: [AppComponent]
 })
